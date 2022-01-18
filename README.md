@@ -16,3 +16,14 @@ Verify by checking the container ip and hostname (ID):
 docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' my-flask
 docker inspect -f '{{ .Config.Hostname }}' my-flask
 ```
+### Terraform
+
+```
+terraform destroy -var-file=dev.tfvars
+```
+
+```
+terraform plan -var-file=dev.tfvars -out devtfplan.out
+#
+terraform apply "devtfplan.out"
+```
