@@ -206,3 +206,6 @@ operations/variable-scripts/variable.json
 # Sentinel runtime directory
 .sentinel
 *.out
+
+# vagrant
+.vagrant/
