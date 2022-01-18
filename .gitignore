@@ -209,3 +209,6 @@ operations/variable-scripts/variable.json
 
 # vagrant
 .vagrant/
+
+# temp directory
+**/temp
