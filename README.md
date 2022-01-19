@@ -37,10 +37,10 @@ terraform apply "devtfplan.out"
 <details> 
 <summary> Preview</summary>
 
-- [ ] Adding DB (MySQL) and connecting the application to it and assing some forms in application.
-- [ ] Creating a `statefulset` for MySQL for deploying it on Kubernetes.
-    - [ ] Configure clustring for MySQL in Kubernetes.
-- [ ] Implementing `ROOK` or `longhorn` as a `storageClass` in Kubernetes.
+- [ ] Adding DB (`MySQL`) and connecting the application to it and assing some forms in application.
+- [ ] Creating a `StatefulSet` for `MySQL` for deploying it on Kubernetes.
+    - [ ] Configure clustring for `MySQL` in Kubernetes.
+- [ ] Implementing `ROOK` or `longhorn` as a `StorageClass` in Kubernetes.
 - [ ] Configuring `provision` in `Terraform` for using `ansible-playbook` for installing Kubernetes.
 - [ ] Creating `helm` chart for DB and APP.
 
