@@ -37,7 +37,21 @@ terraform plan -var-file=dev.tfvars -out devtfplan.out
 terraform apply "devtfplan.out"
 ```
 ### Ansible
-
+First change the IPs in `inventory` file.
+```ini
+[machine]
+master ansible_host=192.168.11.X
+worker-1 ansible_host=192.168.11.X
+worker-2 ansible_host=192.168.11.X
+[kuberlab]
+master
+worker-1
+worker-2
+```
+Afterwards run `ansible-playbook`
+```sh
+ansible-playbook -i provisioning/inventory site.yml
+```
 ### Deploy on Kubernetes
 
 ### To Do
