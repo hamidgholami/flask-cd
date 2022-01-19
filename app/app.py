@@ -12,6 +12,9 @@ def index():
     except:
         return render_template('error.html')
 
+@app.route("/_status")
+def status():
+    return render_template('health-status.html'), 200
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=8080)
