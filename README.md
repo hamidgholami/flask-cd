@@ -37,7 +37,7 @@ terraform apply "devtfplan.out"
 <details> 
 <summary> Preview</summary>
 
-- [ ] Adding DB (`MySQL`) and connecting the application to it and assing some forms in application.
+- [ ] Adding DB (`MySQL`) and connecting the application to it and adding some forms in application.
 - [ ] Creating a `StatefulSet` for `MySQL` for deploying it on Kubernetes.
     - [ ] Configure clustring for `MySQL` in Kubernetes.
 - [ ] Implementing `ROOK` or `longhorn` as a `StorageClass` in Kubernetes.
