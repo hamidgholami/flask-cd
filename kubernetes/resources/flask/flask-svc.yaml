@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name:  flask-dep-svc
+spec:
+  selector:
+    app:  my-flask
+  type:  LoadBalancer # | ClusterIP | NodePort
+  ports:
+  - name:  my-flask-port
+    port:  80
+    targetPort:  8080
