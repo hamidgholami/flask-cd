@@ -1,0 +1,11 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+commonLabels:
+  environment: vagrant
+
+resources:
+  - resources/namespaces.yaml
+  - resources/flask/flask-deploy.yaml
+  - resources/flask/flask-svc.yaml
+  - resources/ingress.yaml
