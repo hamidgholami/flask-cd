@@ -2,7 +2,7 @@
 
 This is a web application project which is written by `Flask`.
 Also there are some practices regarding creating infrastructure as code (Terraform, Ansible, Vagrant)
-and installing kubernetes cluster and preparing CI/CD pipline for deploying the application on k8s cluster.
+and installing kubernetes cluster (via ansible-playbook) and preparing CI/CD pipline for deploying the application on k8s cluster.
 
 ### Create Container
 Create a container from the image.
@@ -32,3 +32,16 @@ terraform apply "devtfplan.out"
 ### Ansible
 
 ### Deploy on Kubernetes
+
+### To Do
+<details> 
+<summary> Preview</summary>
+
+- [ ] Adding DB (MySQL) and connecting the application to it and assing some forms in application.
+- [ ] Creating a `statefulset` for MySQL for deploying it on Kubernetes.
+    - [ ] Configure clustring for MySQL in Kubernetes.
+- [ ] Implementing `ROOK` or `longhorn` as a `storageClass` in Kubernetes.
+- [ ] Configuring `provision` in `Terraform` for using `ansible-playbook` for installing Kubernetes.
+- [ ] Creating `helm` chart for DB and APP.
+
+</details>
