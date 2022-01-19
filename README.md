@@ -4,7 +4,14 @@ This is a web application project which is written by `Flask`.
 Also there are some practices regarding creating infrastructure as code (Terraform, Ansible, Vagrant)
 and installing kubernetes cluster (via ansible-playbook) and preparing CI/CD pipline for deploying the application on k8s cluster.
 
-### Create Container
+### Docker Image
+```
+docker build -t flaskcd:latest .
+```
+Also prepared dockr images is accessed.
+```
+docker pull hamidgholami/flaskcd:latest
+```
 Create a container from the image.
 ```
 docker run --rm --name my-flask -d -p 8080:8080 flaskcd
