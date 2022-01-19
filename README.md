@@ -1,6 +1,8 @@
-# Simple WEB APP by Flask and SQLite and Deploy on Kubernetes
+# Simple WEB APP by Flask and Deploy on Kubernetes
 
-A load-balanced (public) REST API serving some json from an existing (loaded) database
+This is a web application project which is written by `Flask`.
+Also there are some practices regarding creating infrastructure as code (Terraform, Ansible, Vagrant)
+and installing kubernetes cluster and preparing CI/CD pipline for deploying the application on k8s cluster.
 
 ### Create Container
 Create a container from the image.
@@ -27,3 +29,6 @@ terraform plan -var-file=dev.tfvars -out devtfplan.out
 #
 terraform apply "devtfplan.out"
 ```
+### Ansible
+
+### Deploy on Kubernetes
