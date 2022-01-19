@@ -56,7 +56,9 @@ ansible-playbook -i provisioning/inventory site.yml
 ```sh
 kubectl apply -k kubernetes/
 ```
-### To Do
+***
+
+### TO DO
 <details> 
 <summary> Preview</summary>
 
