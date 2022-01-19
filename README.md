@@ -53,7 +53,9 @@ Afterwards run `ansible-playbook`
 ansible-playbook -i provisioning/inventory site.yml
 ```
 ### Deploy on Kubernetes
-
+```sh
+kubectl apply -k kubernetes/
+```
 ### To Do
 <details> 
 <summary> Preview</summary>
