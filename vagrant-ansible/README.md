@@ -1,7 +1,7 @@
 # Kubernetes Labratory
 
 This is a 3-node-cluster Kubernetes that uses `k3s`.
-This project was prepared for *two type of vagrant prividers*:
+This project was prepared for *libvirt privider* in `vagrant`:
 
 ### Requirement
 
