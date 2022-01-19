@@ -8,7 +8,7 @@ and installing kubernetes cluster (via ansible-playbook) and preparing CI/CD pip
 ```
 docker build -t flaskcd:latest .
 ```
-Also prepared dockr images is accessed.
+Also prepared docker image is accessed.
 ```
 docker pull hamidgholami/flaskcd:latest
 ```
