@@ -2,6 +2,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name:  flask-dep-svc
+  namespace: flask-web-app
 spec:
   selector:
     app:  my-flask
