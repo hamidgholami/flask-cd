@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: my-flask-ingress
+  namespace: flask-web-app
+  labels:
+    name: my-flask-ingress
+spec:
+  rules:
+  - host: flaskcd.guts.local
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: flask-dep-svc
+            port: 
+              number: 80
