@@ -57,6 +57,17 @@ ansible-playbook -i provisioning/inventory site.yml
 kubectl apply -k kubernetes/
 ```
 ***
+### Load Balancing
+For aiming to this we can use 2 kinds of architecture.
+1. **Scenario One** We can use Kubernetes `ingress` and `service` for loadbalancing trafics on `Pod`s.
+<p align="center">
+  <img src="./img/k8s_ingress-lb.PNG" width="500" title="K8s ingress">
+</p>
+
+2. **Scenario Two** We can use an external loadbalancer such as: `HAProxy`, `AWS ALB`, `NGINX` or any other tools and loadbalancing trafics on `Pod`s.
+<p align="center">
+  <img src="./img/k8s_ex_lb.png" width="500" title="K8s ingress">
+</p>
 
 ### TO DO
 <details> 
