@@ -56,7 +56,6 @@ ansible-playbook -i provisioning/inventory site.yml
 ```sh
 kubectl apply -k kubernetes/
 ```
-***
 ### Load Balancing
 For aiming to this we can use 2 kinds of architecture.
 1. **Scenario One** We can use Kubernetes `ingress` and `service` for loadbalancing trafics on `Pod`s.
@@ -69,6 +68,7 @@ For aiming to this we can use 2 kinds of architecture.
   <img src="./img/k8s_ex_lb.png" width="500" title="K8s ingress">
 </p>
 
+***
 ### TO DO
 <details> 
 <summary> Preview</summary>
