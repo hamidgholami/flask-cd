@@ -79,5 +79,6 @@ For aiming to this we can use 2 kinds of architecture.
 - [ ] Implementing `ROOK` or `longhorn` as a `StorageClass` in Kubernetes.
 - [ ] Configuring `provision` in `Terraform` for using `ansible-playbook` for installing Kubernetes.
 - [ ] Creating `helm` chart for DB and APP.
+- [ ] Adding `Sign Up` in WEB APP through either `AWS Cognito` or internally.
 
 </details>
